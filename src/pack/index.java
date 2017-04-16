@@ -273,3 +273,286 @@ public class index extends JFrame{
 		b_1.setMargin(new Insets(2, 5, 2, 5));
 		kol_1.setMargin(new Insets(2, 5, 2, 5));
 		kol_cell_1.setMargin(new Insets(2, 5, 2, 5));
+
+		h_2.setMargin(new Insets(2, 5, 2, 5));
+		a_2.setMargin(new Insets(2, 5, 2, 5));
+		b_2.setMargin(new Insets(2, 5, 2, 5));
+		kol_2.setMargin(new Insets(2, 5, 2, 5));
+		kol_cell_2.setMargin(new Insets(2, 5, 2, 5));
+
+		h_3.setMargin(new Insets(2, 5, 2, 5));
+		a_3.setMargin(new Insets(2, 5, 2, 5));
+		b_3.setMargin(new Insets(2, 5, 2, 5));
+		kol_3.setMargin(new Insets(2, 5, 2, 5));
+		kol_cell_3.setMargin(new Insets(2, 5, 2, 5));
+
+		h_4.setMargin(new Insets(2, 5, 2, 5));
+		a_4.setMargin(new Insets(2, 5, 2, 5));
+		b_4.setMargin(new Insets(2, 5, 2, 5));
+		kol_4.setMargin(new Insets(2, 5, 2, 5));
+		kol_cell_4.setMargin(new Insets(2, 5, 2, 5));
+
+		h_5.setMargin(new Insets(2, 5, 2, 5));
+		a_5.setMargin(new Insets(2, 5, 2, 5));
+		b_5.setMargin(new Insets(2, 5, 2, 5));
+		kol_5.setMargin(new Insets(2, 5, 2, 5));
+		kol_cell_5.setMargin(new Insets(2, 5, 2, 5));
+		//установка внутренних отступов для текстового поля (2-верхний отступ, 5-левый, 2-нижний, 5-правый)
+
+		//компонент флажок 
+		check_1 = new JCheckBox("Стеллаж 1");
+		check_2 = new JCheckBox("Стеллаж 2");
+		check_3 = new JCheckBox("Стеллаж 3");
+		check_4 = new JCheckBox("Стеллаж 4");
+		check_5 = new JCheckBox("Стеллаж 5");
+		check_1.setSelected(true);
+		//выравнивание текста по центру
+		check_1.setHorizontalAlignment(JCheckBox.CENTER); 
+		check_2.setHorizontalAlignment(JCheckBox.CENTER); 
+		check_3.setHorizontalAlignment(JCheckBox.CENTER); 
+		check_4.setHorizontalAlignment(JCheckBox.CENTER); 
+		check_5.setHorizontalAlignment(JCheckBox.CENTER); 
+
+		//Добавление компонентов на панели panel
+		panel.add(label_0);
+		panel.add(itog);
+
+		panel1.add(label_n);
+		panel1.add(check_1);
+		panel1.add(check_2);
+		panel1.add(check_3);
+		panel1.add(check_4);
+		panel1.add(check_5);
+
+		panel1.add(label_n1);
+		panel1.add(del_1);
+		panel1.add(del_2);
+		panel1.add(del_3);
+		panel1.add(del_4);
+		panel1.add(del_5);
+		
+		panel1.add(label_1);
+		panel1.add(h_1);
+		panel1.add(h_2);
+		panel1.add(h_3);
+		panel1.add(h_4);
+		panel1.add(h_5);
+		
+		panel1.add(label_2);
+		panel1.add(a_1);
+		panel1.add(a_2);
+		panel1.add(a_3);
+		panel1.add(a_4);
+		panel1.add(a_5);
+		
+		panel1.add(label_3);
+		panel1.add(b_1);
+		panel1.add(b_2);
+		panel1.add(b_3);
+		panel1.add(b_4);
+		panel1.add(b_5);		
+		
+		panel1.add(label_4);
+		panel1.add(kol_1);
+		panel1.add(kol_2);
+		panel1.add(kol_3);
+		panel1.add(kol_4);
+		panel1.add(kol_5);
+		
+		panel1.add(label_5);
+		panel1.add(kol_cell_1);
+		panel1.add(kol_cell_2);
+		panel1.add(kol_cell_3);
+		panel1.add(kol_cell_4);
+		panel1.add(kol_cell_5);
+		
+		panel1.add(label_6);
+		panel1.add(size_1);
+		panel1.add(size_2);
+		panel1.add(size_3);
+		panel1.add(size_4);
+		panel1.add(size_5);
+
+		panel1.add(label_7);
+		panel1.add(h_cell_1);
+		panel1.add(h_cell_2);
+		panel1.add(h_cell_3);
+		panel1.add(h_cell_4);
+		panel1.add(h_cell_5);
+		
+		panel1.add(label_8);
+		panel1.add(a_cell_1);
+		panel1.add(a_cell_2);
+		panel1.add(a_cell_3);
+		panel1.add(a_cell_4);
+		panel1.add(a_cell_5);
+		
+		panel1.add(label_9);
+		panel1.add(b_cell_1);
+		panel1.add(b_cell_2);
+		panel1.add(b_cell_3);
+		panel1.add(b_cell_4);
+		panel1.add(b_cell_5);	
+		
+		panel1.add(label_10);
+		panel1.add(kol_cell_st_1);
+		panel1.add(kol_cell_st_2);
+		panel1.add(kol_cell_st_3);
+		panel1.add(kol_cell_st_4);
+		panel1.add(kol_cell_st_5);	
+		
+		panel1.add(label_11);
+		panel1.add(stor_1);
+		panel1.add(stor_2);
+		panel1.add(stor_3);
+		panel1.add(stor_4);
+		panel1.add(stor_5);	
+		
+		panel2.add(calc);
+
+		//Если галочка у checkbox не стоит - поля для ввода в данном столбце недоступны
+		del_2.setEnabled(false);
+		h_2.setEditable(false);
+		a_2.setEditable(false);
+		b_2.setEditable(false);
+		kol_2.setEditable(false);
+		kol_cell_2.setEditable(false);
+		
+		del_3.setEnabled(false);
+		h_3.setEditable(false);
+		a_3.setEditable(false);
+		b_3.setEditable(false);
+		kol_3.setEditable(false);
+		kol_cell_3.setEditable(false);
+		
+		del_4.setEnabled(false);
+		h_4.setEditable(false);
+		a_4.setEditable(false);
+		b_4.setEditable(false);
+		kol_4.setEditable(false);
+		kol_cell_4.setEditable(false);
+		
+		del_5.setEnabled(false);
+		h_5.setEditable(false);
+		a_5.setEditable(false);
+		b_5.setEditable(false);
+		kol_5.setEditable(false);
+		kol_cell_5.setEditable(false);
+		
+/*СТЕЛЛАЖ 1*/
+		check_1.addItemListener(new ItemListener(){   /*Для компонента флажок устанавливаем слушатель события                                                        
+			Если нажать на компонент - сработает проверка выбран флажок или снят */                                                     
+			public void itemStateChanged(ItemEvent e) 
+			/*. В теле метода itemStateChanged располагается код, который выполняется при смене состояния флажка. */
+			{
+				if (e.getSource()==check_1)//если событие произошло именно с флажком check_, то выполняется следующее
+					if(e.getStateChange()==1){ /* Если данный компонент флажок включен (==1), то поля для ввода информации о стеллаже доступны  */
+						int_1=1; //переменная которая отвечает за то что стеллаж доступен
+						del_1.setEnabled(true);
+						h_1.setEditable(true);
+						a_1.setEditable(true);
+						b_1.setEditable(true);
+						kol_1.setEditable(true);
+						kol_cell_1.setEditable(true);
+						h_cell_1.setForeground(Color.BLACK); 
+						a_cell_1.setForeground(Color.BLACK); 
+						b_cell_1.setForeground(Color.BLACK); 
+						kol_cell_st_1.setForeground(Color.BLACK); 
+						stor_1.setForeground(Color.BLUE); 
+						itog.setText("");
+						}
+					else { //если флажок выключен
+						int_1=0; //переменная которая отвечаетза то что стеллаж доступен
+						del_1.setEnabled(false);
+						h_1.setEditable(false);
+						a_1.setEditable(false);
+						b_1.setEditable(false);
+						kol_1.setEditable(false);
+						kol_cell_1.setEditable(false);
+						h_cell_1.setForeground(Color.GRAY); 
+						a_cell_1.setForeground(Color.GRAY); 
+						b_cell_1.setForeground(Color.GRAY); 
+						kol_cell_st_1.setForeground(Color.GRAY); 
+						stor_1.setForeground(Color.GRAY); 
+						itog.setText("");
+					}
+			}                                                       
+    	   }); 	
+/*СТЕЛЛАЖ 2*/
+		check_2.addItemListener(new ItemListener(){   /*Для компонента флажок устанавливаем слушатель события                                                        
+			Если нажать на компонент - сработает проверка выбран флажок или снят */                                                     
+			public void itemStateChanged(ItemEvent e) 
+			/*. В теле метода itemStateChanged располагается код, который выполняется при смене состояния флажка. */
+			{
+				if (e.getSource()==check_2)//если событие произошло именно с флажком check_, то выполняется следующее
+					if(e.getStateChange()==1){ /* Если данный компонент флажок включен (==1), то поля для ввода информации о стеллаже доступны  */
+						int_2=1; //переменная которая отвечает за то что стеллаж доступен
+						del_2.setEnabled(true);
+						h_2.setEditable(true);
+						a_2.setEditable(true);
+						b_2.setEditable(true);
+						kol_2.setEditable(true);
+						kol_cell_2.setEditable(true);
+						h_cell_2.setForeground(Color.BLACK); 
+						a_cell_2.setForeground(Color.BLACK); 
+						b_cell_2.setForeground(Color.BLACK); 
+						kol_cell_st_2.setForeground(Color.BLACK); 
+						stor_2.setForeground(Color.BLUE); 
+						itog.setText("");
+						}
+					else { //если флажок выключен
+						int_2=0; //переменная которая отвечаетза то что стеллаж доступен
+						del_2.setEnabled(false);
+						h_2.setEditable(false);
+						a_2.setEditable(false);
+						b_2.setEditable(false);
+						kol_2.setEditable(false);
+						kol_cell_2.setEditable(false);
+						h_cell_2.setForeground(Color.GRAY); 
+						a_cell_2.setForeground(Color.GRAY); 
+						b_cell_2.setForeground(Color.GRAY); 
+						kol_cell_st_2.setForeground(Color.GRAY); 
+						stor_2.setForeground(Color.GRAY); 
+						itog.setText("");
+					}
+			}                                                       
+    	   });
+/*СТЕЛЛАЖ 3*/
+		check_3.addItemListener(new ItemListener(){   /*Для компонента флажок устанавливаем слушатель события                                                        
+			Если нажать на компонент - сработает проверка выбран флажок или снят */                                                     
+			public void itemStateChanged(ItemEvent e) 
+			/*. В теле метода itemStateChanged располагается код, который выполняется при смене состояния флажка. */
+			{
+				if (e.getSource()==check_3)//если событие произошло именно с флажком check_, то выполняется следующее
+					if(e.getStateChange()==1){ /* Если данный компонент флажок включен (==1), то поля для ввода информации о стеллаже доступны  */
+						int_3=1; //переменная которая отвечает за то что стеллаж доступен
+						del_3.setEnabled(true);
+						h_3.setEditable(true);
+						a_3.setEditable(true);
+						b_3.setEditable(true);
+						kol_3.setEditable(true);
+						kol_cell_3.setEditable(true);
+						h_cell_3.setForeground(Color.BLACK); 
+						a_cell_3.setForeground(Color.BLACK); 
+						b_cell_3.setForeground(Color.BLACK); 
+						kol_cell_st_3.setForeground(Color.BLACK); 
+						stor_3.setForeground(Color.BLUE); 
+						itog.setText("");
+						}
+					else { //если флажок выключен
+						int_3=0; //переменная которая отвечаетза то что стеллаж доступен
+						del_3.setEnabled(false);
+						h_3.setEditable(false);
+						a_3.setEditable(false);
+						b_3.setEditable(false);
+						kol_3.setEditable(false);
+						kol_cell_3.setEditable(false);
+						h_cell_3.setForeground(Color.GRAY); 
+						a_cell_3.setForeground(Color.GRAY); 
+						b_cell_3.setForeground(Color.GRAY); 
+						kol_cell_st_3.setForeground(Color.GRAY); 
+						stor_3.setForeground(Color.GRAY); 
+						itog.setText("");
+					}
+			}                                                       
+    	   });		
