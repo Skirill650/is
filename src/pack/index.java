@@ -556,3 +556,277 @@ public class index extends JFrame{
 					}
 			}                                                       
     	   });		
+
+/*СТЕЛЛАЖ 4*/
+		check_4.addItemListener(new ItemListener(){   /*Для компонента флажок устанавливаем слушатель события                                                        
+			Если нажать на компонент - сработает проверка выбран флажок или снят */                                                     
+			public void itemStateChanged(ItemEvent e) 
+			/*. В теле метода itemStateChanged располагается код, который выполняется при смене состояния флажка. */
+			{
+				if (e.getSource()==check_4)//если событие произошло именно с флажком check_, то выполняется следующее
+					if(e.getStateChange()==1){ /* Если данный компонент флажок включен (==1), то поля для ввода информации о стеллаже доступны  */
+						int_4=1; //переменная которая отвечает за то что стеллаж доступен
+						del_4.setEnabled(true);
+						h_4.setEditable(true);
+						a_4.setEditable(true);
+						b_4.setEditable(true);
+						kol_4.setEditable(true);
+						kol_cell_4.setEditable(true);
+						h_cell_4.setForeground(Color.BLACK); 
+						a_cell_4.setForeground(Color.BLACK); 
+						b_cell_4.setForeground(Color.BLACK); 
+						kol_cell_st_4.setForeground(Color.BLACK); 
+						stor_4.setForeground(Color.BLUE); 
+						itog.setText("");
+						}
+					else { //если флажок выключен
+						int_4=0; //переменная которая отвечаетза то что стеллаж доступен
+						del_4.setEnabled(false);
+						h_4.setEditable(false);
+						a_4.setEditable(false);
+						b_4.setEditable(false);
+						kol_4.setEditable(false);
+						kol_cell_4.setEditable(false);
+						h_cell_4.setForeground(Color.GRAY); 
+						a_cell_4.setForeground(Color.GRAY); 
+						b_cell_4.setForeground(Color.GRAY); 
+						kol_cell_st_4.setForeground(Color.GRAY); 
+						stor_4.setForeground(Color.GRAY); 
+						itog.setText("");
+					}
+			}                                                       
+    	   });			
+/*СТЕЛЛАЖ 5*/
+		check_5.addItemListener(new ItemListener(){   /*Для компонента флажок устанавливаем слушатель события                                                        
+			Если нажать на компонент - сработает проверка выбран флажок или снят */                                                     
+			public void itemStateChanged(ItemEvent e) 
+			/*. В теле метода itemStateChanged располагается код, который выполняется при смене состояния флажка. */
+			{
+				if (e.getSource()==check_5)//если событие произошло именно с флажком check_, то выполняется следующее
+					if(e.getStateChange()==1){ /* Если данный компонент флажок включен (==1), то поля для ввода информации о стеллаже доступны  */
+						int_5=1; //переменная которая отвечает за то что стеллаж доступен
+						del_5.setEnabled(true);
+						h_5.setEditable(true);
+						a_5.setEditable(true);
+						b_5.setEditable(true);
+						kol_5.setEditable(true);
+						kol_cell_5.setEditable(true);
+						h_cell_5.setForeground(Color.BLACK); 
+						a_cell_5.setForeground(Color.BLACK); 
+						b_cell_5.setForeground(Color.BLACK); 
+						kol_cell_st_5.setForeground(Color.BLACK); 
+						stor_5.setForeground(Color.BLUE); 
+						itog.setText("");
+						}
+					else { //если флажок выключен
+						int_5=0; //переменная которая отвечаетза то что стеллаж доступен
+						del_5.setEnabled(false);
+						h_5.setEditable(false);
+						a_5.setEditable(false);
+						b_5.setEditable(false);
+						kol_5.setEditable(false);
+						kol_cell_5.setEditable(false);
+						h_cell_5.setForeground(Color.GRAY); 
+						a_cell_5.setForeground(Color.GRAY); 
+						b_cell_5.setForeground(Color.GRAY); 
+						kol_cell_st_5.setForeground(Color.GRAY); 
+						stor_5.setForeground(Color.GRAY); 
+						itog.setText("");
+					}
+			}                                                       
+    	   });			
+		calc.addActionListener(new ActionListener()   
+    			/* 	calc - кнопка Рассчитать 
+    	 		"."  - указывает к какой переменной (кнопке) следует применить слушателя.
+    	 		addActionListener - добавление слушателя ActionListener к кнопке
+    	  		new - Оператор new создает экземпляр указанного класса 
+    	  		(Для того чтобы кнопки стали функциональными, каждой из них необходимо присвоить обработчик событий, 
+    	  		который будет отвечать за реагирование на события. 
+    	  		В нашем случае требуется идентифицировать событие нажатия кнопки – путем щелчка мышью. 
+    	  		Поэтому будет использоваться интерфейс "ActionListener", 
+    	  		предназначенный для обработки событий "ActionEvent".
+    	  		тело интерфейса указывается ниже после фигурной скобки "{"
+    	  		*/ 
+    	   {                                                         
+    	    public void actionPerformed(ActionEvent e)   
+    	    /* 	ActionListener" имеет метод "actionPerformed" объекта "ActionEvent", 
+      		который реализуется путем простого вызова обработчика событий ActionPerformed.
+      		Ключевое слово public означает, что метод actionPerformed() доступен для любого другого класса Java
+      		Ключевое слово void означает, что метод main() не возвращает данных в программу, которая его вызвала. 
+      	*/
+    	    {  
+    	    	//очищение полей в которые записаны результаты предыдущего расчета
+    	    	size_1.setText("");
+    	    	h_cell_1.setText("");
+    	    	a_cell_1.setText("");
+    	    	b_cell_1.setText("");
+    	    	kol_cell_st_1.setText("");
+    	    	stor_1.setText("");
+    	    	
+    	    	size_2.setText("");
+    	    	h_cell_2.setText("");
+    	    	a_cell_2.setText("");
+    	    	b_cell_2.setText("");
+    	    	kol_cell_st_2.setText("");
+    	    	stor_2.setText("");
+    	    	
+    	    	size_3.setText("");
+    	    	h_cell_3.setText("");
+    	    	a_cell_3.setText("");
+    	    	b_cell_3.setText("");
+    	    	kol_cell_st_3.setText("");
+    	    	stor_3.setText("");
+    	    	
+    	    	size_4.setText("");
+    	    	h_cell_4.setText("");
+    	    	a_cell_4.setText("");
+    	    	b_cell_4.setText("");
+    	    	kol_cell_st_4.setText("");
+    	    	stor_4.setText("");
+    	    	
+    	    	size_5.setText("");
+    	    	h_cell_5.setText("");
+    	    	a_cell_5.setText("");
+    	    	b_cell_5.setText("");
+    	    	kol_cell_st_5.setText("");
+    	    	stor_5.setText("");
+    	    	
+    	    	itog.setText("0");
+    	    	int int_st_1=0,int_st_2=0,int_st_3=0,int_st_4=0,int_st_5=0;
+    	    	if (int_1==1){ //если стеллаж выбран
+    	    		if ((isValidInput(h_1, "высоту 1 стеллажа"))&&
+    	    			(isValidInput(a_1, "ширину 1 стеллажа"))&&
+    	    			(isValidInput(b_1, "глубину 1 стеллажа"))&&
+    	    			(isValidInput(kol_1, "количество ярусов (1 стеллаж)"))&&
+    	    			(isValidInput(kol_cell_1, "количество ячеек на ярусе (1 стеллаж)"))) {
+    		    		/* if - оператор если. * isValidInput проверяет данные на правильность, т.е. 
+    			 		если в текстовые поля введены буквы или символы (текст, который невозможно преобразовать в цифры).
+    			   		Если введены некорректные данные, то выдает ошибку */	
+    	    			int_st_1=1;
+    	    		}
+    	    	} else {
+    	    		int_st_1=1;
+    	    	}
+    	    	if (int_2==1){ //если стеллаж выбран
+    	    		if ((isValidInput(h_2, "высоту 2 стеллажа"))&&
+    	    			(isValidInput(a_2, "ширину 2 стеллажа"))&&
+    	    			(isValidInput(b_2, "глубину 2 стеллажа"))&&
+    	    			(isValidInput(kol_2, "количество ярусов (2 стеллаж)"))&&
+    	    			(isValidInput(kol_cell_2, "количество ячеек на ярусе (2 стеллаж)"))) {
+    		    		/* if - оператор если. * isValidInput проверяет данные на правильность, т.е. 
+    			 		если в текстовые поля введены буквы или символы (текст, который невозможно преобразовать в цифры).
+    			   		Если введены некорректные данные, то выдает ошибку */	
+    	    			int_st_2=1;
+    	    		}
+    	    	} else {
+    	    		int_st_2=1;
+    	    	}
+    	    	if (int_3==1){ //если стеллаж выбран
+    	    		if ((isValidInput(h_3, "высоту 3 стеллажа"))&&
+    	    			(isValidInput(a_3, "ширину 3 стеллажа"))&&
+    	    			(isValidInput(b_3, "глубину 3 стеллажа"))&&
+    	    			(isValidInput(kol_3, "количество ярусов (3 стеллаж)"))&&
+    	    			(isValidInput(kol_cell_3, "количество ячеек на ярусе (3 стеллаж)"))) {
+    		    		/* if - оператор если. * isValidInput проверяет данные на правильность, т.е. 
+    			 		если в текстовые поля введены буквы или символы (текст, который невозможно преобразовать в цифры).
+    			   		Если введены некорректные данные, то выдает ошибку */	
+    	    			int_st_3=1;
+    	    		}
+    	    	} else {
+    	    		int_st_3=1;
+    	    	}
+    	    	if (int_4==1){ //если стеллаж выбран
+    	    		if ((isValidInput(h_4, "высоту 4 стеллажа"))&&
+    	    			(isValidInput(a_4, "ширину 4 стеллажа"))&&
+    	    			(isValidInput(b_4, "глубину 4 стеллажа"))&&
+    	    			(isValidInput(kol_4, "количество ярусов (4 стеллаж)"))&&
+    	    			(isValidInput(kol_cell_4, "количество ячеек на ярусе (4 стеллаж)"))) {
+    		    		/* if - оператор если. * isValidInput проверяет данные на правильность, т.е. 
+    			 		если в текстовые поля введены буквы или символы (текст, который невозможно преобразовать в цифры).
+    			   		Если введены некорректные данные, то выдает ошибку */	
+    	    			int_st_4=1;
+    	    		}
+    	    	} else {
+    	    		int_st_4=1;
+    	    	}
+    	    	if (int_5==1){ //если стеллаж выбран
+    	    		if ((isValidInput(h_5, "высоту 5 стеллажа"))&&
+    	    			(isValidInput(a_5, "ширину 5 стеллажа"))&&
+    	    			(isValidInput(b_5, "глубину 5 стеллажа"))&&
+    	    			(isValidInput(kol_5, "количество ярусов (5 стеллаж)"))&&
+    	    			(isValidInput(kol_cell_5, "количество ячеек на ярусе (5 стеллаж)"))) {
+    		    		/* if - оператор если. * isValidInput проверяет данные на правильность, т.е. 
+    			 		если в текстовые поля введены буквы или символы (текст, который невозможно преобразовать в цифры).
+    			   		Если введены некорректные данные, то выдает ошибку */	
+    	    			int_st_5=1;
+    	    		}
+    	    	} else {
+    	    		int_st_5=1;
+    	    	}
+    	    	
+    	    	if (int_st_1*int_st_2*int_st_3*int_st_4*int_st_5==1){ //если все данные введены верно производим расчет
+    	    		double d_stor_1,d_stor_2,d_stor_3,d_stor_4,d_stor_5;
+/* 1 стеллаж*/
+    	    		if (int_1==1){ //если стеллаж выбран
+        	    		double d_h_1= Double.parseDouble(h_1.getText().replace(',','.'));
+        	    		double d_a_1= Double.parseDouble(a_1.getText().replace(',','.'));
+        	    		double d_b_1= Double.parseDouble(b_1.getText().replace(',','.'));
+        	    		double d_kol_1= Double.parseDouble(kol_1.getText().replace(',','.'));
+        	    		double d_kol_cell_1= Double.parseDouble(kol_cell_1.getText().replace(',','.'));
+        	    		/* В переменную  записываются данные введеные пользователем в текстовое поле которое расположено в файле Index.
+        	    		Преобразование данных в тип Double. */ 
+        	    		d_stor_1=(d_h_1/100)*(d_a_1/100)*(d_b_1/100);
+        	    		double d_h_cell_1=d_h_1/d_kol_1;
+        	    		double d_a_cell_1=d_a_1/d_kol_cell_1;
+        	    		double d_b_cell_1=d_b_1;
+        	    		double d_kol_cell_st_1=d_kol_cell_1*d_kol_1;
+        	    		String s_h_cell_1 = String.format("%.2f", d_h_cell_1);
+        	    		String s_a_cell_1 = String.format("%.2f", d_a_cell_1);
+        	    		String s_b_cell_1 = String.format("%.2f", d_b_cell_1);
+        	    		String s_kol_cell_st_1 = String.format("%.2f", d_kol_cell_st_1);
+        	    		String s_stor_1 = String.format("%.2f", d_stor_1);
+    	    		    /* String - указываем что переменная будет иметь строковый тип,
+    	    		     * s_stor_1 - название новой переменной,
+    	    		     * String.format - преобразование переменной в строкой тип,
+    	    		     	%.2f - указываем что переменная имеет тип Float, показываем 2 знака после запятой,
+    	    		     	d_stor_1 - переменная типа double, которую надо преобразовать в строковый тип
+    	    		     	 */
+        	    		 /* Записываем строковую переменную в поля Jlabel */
+        	    		h_cell_1.setText(s_h_cell_1);
+        	    		a_cell_1.setText(s_a_cell_1);
+        	    		b_cell_1.setText(s_b_cell_1);
+        	    		kol_cell_st_1.setText(s_kol_cell_st_1);
+        	    		stor_1.setText(s_stor_1);
+    	    		} else {d_stor_1=0;}   
+ /* 2 стеллаж*/   	    		
+    	    		if (int_2==1){ //если стеллаж выбран
+        	    		double d_h_2= Double.parseDouble(h_2.getText().replace(',','.'));
+        	    		double d_a_2= Double.parseDouble(a_2.getText().replace(',','.'));
+        	    		double d_b_2= Double.parseDouble(b_2.getText().replace(',','.'));
+        	    		double d_kol_2= Double.parseDouble(kol_2.getText().replace(',','.'));
+        	    		double d_kol_cell_2= Double.parseDouble(kol_cell_2.getText().replace(',','.'));
+        	    		/* В переменную  записываются данные введеные пользователем в текстовое поле которое расположено в файле Index.
+        	    		Преобразование данных в тип Double. */ 
+        	    		d_stor_2=(d_h_2/100)*(d_a_2/100)*(d_b_2/100);
+        	    		double d_h_cell_2=d_h_2/d_kol_2;
+        	    		double d_a_cell_2=d_a_2/d_kol_cell_2;
+        	    		double d_b_cell_2=d_b_2;
+        	    		double d_kol_cell_st_2=d_kol_cell_2*d_kol_2;
+        	    		String s_h_cell_2 = String.format("%.2f", d_h_cell_2);
+        	    		String s_a_cell_2 = String.format("%.2f", d_a_cell_2);
+        	    		String s_b_cell_2 = String.format("%.2f", d_b_cell_2);
+        	    		String s_kol_cell_st_2 = String.format("%.2f", d_kol_cell_st_2);
+        	    		String s_stor_2 = String.format("%.2f", d_stor_2);
+    	    		    /* String - указываем что переменная будет иметь строковый тип,
+    	    		     * s_stor_2 - название новой переменной,
+    	    		     * String.format - преобразование переменной в строкой тип,
+    	    		     	%.2f - указываем что переменная имеет тип Float, показываем 2 знака после запятой,
+    	    		     	d_stor_2 - переменная типа double, которую надо преобразовать в строковый тип
+    	    		     	 */
+        	    		 /* Записываем строковую переменную в поля Jlabel */
+        	    		h_cell_2.setText(s_h_cell_2);
+        	    		a_cell_2.setText(s_a_cell_2);
+        	    		b_cell_2.setText(s_b_cell_2);
+        	    		kol_cell_st_2.setText(s_kol_cell_st_2);
+        	    		stor_2.setText(s_stor_2);
+    	    		} else {d_stor_2=0;}  
