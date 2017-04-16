@@ -830,3 +830,279 @@ public class index extends JFrame{
         	    		kol_cell_st_2.setText(s_kol_cell_st_2);
         	    		stor_2.setText(s_stor_2);
     	    		} else {d_stor_2=0;}  
+
+ /* 3 стеллаж*/   	    		
+    	    		if (int_3==1){ //если стеллаж выбран
+        	    		double d_h_3= Double.parseDouble(h_3.getText().replace(',','.'));
+        	    		double d_a_3= Double.parseDouble(a_3.getText().replace(',','.'));
+        	    		double d_b_3= Double.parseDouble(b_3.getText().replace(',','.'));
+        	    		double d_kol_3= Double.parseDouble(kol_3.getText().replace(',','.'));
+        	    		double d_kol_cell_3= Double.parseDouble(kol_cell_3.getText().replace(',','.'));
+        	    		/* В переменную  записываются данные введеные пользователем в текстовое поле которое расположено в файле Index.
+        	    		Преобразование данных в тип Double. */ 
+        	    		d_stor_3=(d_h_3/100)*(d_a_3/100)*(d_b_3/100);
+        	    		double d_h_cell_3=d_h_3/d_kol_3;
+        	    		double d_a_cell_3=d_a_3/d_kol_cell_3;
+        	    		double d_b_cell_3=d_b_3;
+        	    		double d_kol_cell_st_3=d_kol_cell_3*d_kol_3;
+        	    		String s_h_cell_3 = String.format("%.2f", d_h_cell_3);
+        	    		String s_a_cell_3 = String.format("%.2f", d_a_cell_3);
+        	    		String s_b_cell_3 = String.format("%.2f", d_b_cell_3);
+        	    		String s_kol_cell_st_3 = String.format("%.2f", d_kol_cell_st_3);
+        	    		String s_stor_3 = String.format("%.2f", d_stor_3);
+    	    		    /* String - указываем что переменная будет иметь строковый тип,
+    	    		     * s_stor_3 - название новой переменной,
+    	    		     * String.format - преобразование переменной в строкой тип,
+    	    		     	%.2f - указываем что переменная имеет тип Float, показываем 2 знака после запятой,
+    	    		     	d_stor_3 - переменная типа double, которую надо преобразовать в строковый тип
+    	    		     	 */
+        	    		/* Записываем строковую переменную в поля Jlabel */
+        	    		h_cell_3.setText(s_h_cell_3);
+        	    		a_cell_3.setText(s_a_cell_3);
+        	    		b_cell_3.setText(s_b_cell_3);
+        	    		kol_cell_st_3.setText(s_kol_cell_st_3);
+        	    		stor_3.setText(s_stor_3);
+    	    		} else {d_stor_3=0;}     	    		
+ /* 4 стеллаж*/   	    		
+    	    		if (int_4==1){ //если стеллаж выбран
+        	    		double d_h_4= Double.parseDouble(h_4.getText().replace(',','.'));
+        	    		double d_a_4= Double.parseDouble(a_4.getText().replace(',','.'));
+        	    		double d_b_4= Double.parseDouble(b_4.getText().replace(',','.'));
+        	    		double d_kol_4= Double.parseDouble(kol_4.getText().replace(',','.'));
+        	    		double d_kol_cell_4= Double.parseDouble(kol_cell_4.getText().replace(',','.'));
+        	    		/* В переменную  записываются данные введеные пользователем в текстовое поле которое расположено в файле Index.
+        	    		Преобразование данных в тип Double. */ 
+        	    		d_stor_4=(d_h_4/100)*(d_a_4/100)*(d_b_4/100);
+        	    		double d_h_cell_4=d_h_4/d_kol_4;
+        	    		double d_a_cell_4=d_a_4/d_kol_cell_4;
+        	    		double d_b_cell_4=d_b_4;
+        	    		double d_kol_cell_st_4=d_kol_cell_4*d_kol_4;
+        	    		String s_h_cell_4 = String.format("%.2f", d_h_cell_4);
+        	    		String s_a_cell_4 = String.format("%.2f", d_a_cell_4);
+        	    		String s_b_cell_4 = String.format("%.2f", d_b_cell_4);
+        	    		String s_kol_cell_st_4 = String.format("%.2f", d_kol_cell_st_4);
+        	    		String s_stor_4 = String.format("%.2f", d_stor_4);
+    	    		    /* String - указываем что переменная будет иметь строковый тип,
+    	    		     * s_stor_4 - название новой переменной,
+    	    		     * String.format - преобразование переменной в строкой тип,
+    	    		     	%.2f - указываем что переменная имеет тип Float, показываем 2 знака после запятой,
+    	    		     	d_stor_4 - переменная типа double, которую надо преобразовать в строковый тип
+    	    		     	 */
+        	    		h_cell_4.setText(s_h_cell_4);
+        	    		a_cell_4.setText(s_a_cell_4);
+        	    		b_cell_4.setText(s_b_cell_4);
+        	    		kol_cell_st_4.setText(s_kol_cell_st_4);
+        	    		stor_4.setText(s_stor_4);
+    	    		} else {d_stor_4=0;}  
+ /* 5 стеллаж*/   	    		
+    	    		if (int_5==1){ //если стеллаж выбран
+        	    		double d_h_5= Double.parseDouble(h_5.getText().replace(',','.'));
+        	    		double d_a_5= Double.parseDouble(a_5.getText().replace(',','.'));
+        	    		double d_b_5= Double.parseDouble(b_5.getText().replace(',','.'));
+        	    		double d_kol_5= Double.parseDouble(kol_5.getText().replace(',','.'));
+        	    		double d_kol_cell_5= Double.parseDouble(kol_cell_5.getText().replace(',','.'));
+        	    		/* В переменную  записываются данные введеные пользователем в текстовое поле которое расположено в файле Index.
+        	    		Преобразование данных в тип Double. */ 
+        	    		d_stor_5=(d_h_5/100)*(d_a_5/100)*(d_b_5/100);
+        	    		double d_h_cell_5=d_h_5/d_kol_5;
+        	    		double d_a_cell_5=d_a_5/d_kol_cell_5;
+        	    		double d_b_cell_5=d_b_5;
+        	    		double d_kol_cell_st_5=d_kol_cell_5*d_kol_5;
+        	    		String s_h_cell_5 = String.format("%.2f", d_h_cell_5);
+        	    		String s_a_cell_5 = String.format("%.2f", d_a_cell_5);
+        	    		String s_b_cell_5 = String.format("%.2f", d_b_cell_5);
+        	    		String s_kol_cell_st_5 = String.format("%.2f", d_kol_cell_st_5);
+        	    		String s_stor_5 = String.format("%.2f", d_stor_5);
+    	    		    /* String - указываем что переменная будет иметь строковый тип,
+    	    		     * s_stor_5 - название новой переменной,
+    	    		     * String.format - преобразование переменной в строкой тип,
+    	    		     	%.2f - указываем что переменная имеет тип Float, показываем 2 знака после запятой,
+    	    		     	d_stor_5 - переменная типа double, которую надо преобразовать в строковый тип
+    	    		     	 */
+        	    		 /* Записываем строковую переменную в поля Jlabel */
+        	    		h_cell_5.setText(s_h_cell_5);
+        	    		a_cell_5.setText(s_a_cell_5);
+        	    		b_cell_5.setText(s_b_cell_5);
+        	    		kol_cell_st_5.setText(s_kol_cell_st_5);
+        	    		stor_5.setText(s_stor_5);
+    	    		} else {d_stor_5=0;}  
+        	    	double d_itog=d_stor_1+d_stor_2+d_stor_3+d_stor_4+d_stor_5;
+    	    		String s_itog = String.format("%.2f", d_itog);
+    	    		itog.setText(s_itog); /* Записываем строковую переменную в поля Jlabel */
+
+    	    	}
+    	    	
+    	    	
+    	    	}   	    	                             
+    	   }); 
+//Слушатель для кнопки ОЧИСТИТЬ стеллаж 1			
+		del_1.addActionListener(new ActionListener(){    //добавляем слушателя события для кнопки 
+			/*      "."  - указывает к какой переменной (кнопке) следует применить слушателя.
+		 	addActionListener - добавление слушателя ActionListener к кнопке
+		  	new - Оператор new создает экземпляр указанного класса 
+		  	(Для того чтобы кнопки стали функциональными, каждой из них необходимо присвоить обработчик событий, 
+		  	который будет отвечать за реагирование на события. 
+		  	В нашем случае требуется идентифицировать событие нажатия кнопки – путем щелчка мышью. 
+		  	Поэтому будет использоваться интерфейс "ActionListener", 
+		  	предназначенный для обработки событий "ActionEvent".
+		  	тело интерфейса указывается ниже после фигурной скобки "{"
+    	    */
+    	    public void actionPerformed(ActionEvent e) 
+    	    /* 	ActionListener" имеет метод "actionPerformed" объекта "ActionEvent", 
+	      	который реализуется путем простого вызова обработчика событий ActionPerformed.
+	      	Ключевое слово public означает, что метод actionPerformed() доступен для любого другого класса Java
+	      	Ключевое слово void означает, что метод main() не возвращает данных в программу, которая его вызвала. 
+	      	*/             
+    	    {   
+		    	//	Обнуляем все поля, переменные, флажки ставим в состояние выключен
+    	    	h_1.setText("");
+    	    	a_1.setText("");
+    	    	b_1.setText("");
+    	    	kol_1.setText("");
+    	    	kol_cell_1.setText("");
+    	    	h_cell_1.setText("");
+    	    	a_cell_1.setText("");
+    	    	b_cell_1.setText("");
+    	    	kol_cell_st_1.setText("");
+    	    	stor_1.setText("");
+    	    	itog.setText("");
+
+    	    }    	    	                                                        
+    	   });		
+	del_2.addActionListener(new ActionListener(){ 
+    	    public void actionPerformed(ActionEvent e)       
+    	    {   
+		    	//	Обнуляем все поля, переменные, флажки ставим в состояние выключен
+    	    	h_2.setText("");
+    	    	a_2.setText("");
+    	    	b_2.setText("");
+    	    	kol_2.setText("");
+    	    	kol_cell_2.setText("");
+    	    	h_cell_2.setText("");
+    	    	a_cell_2.setText("");
+    	    	b_cell_2.setText("");
+    	    	kol_cell_st_2.setText("");
+    	    	stor_2.setText("");
+    	    	itog.setText("");
+
+    	    }    	    	                                                        
+    	   });		
+	del_3.addActionListener(new ActionListener(){ 
+	    public void actionPerformed(ActionEvent e)       
+	    {   
+	    	//	Обнуляем все поля, переменные, флажки ставим в состояние выключен
+	    	h_3.setText("");
+	    	a_3.setText("");
+	    	b_3.setText("");
+	    	kol_3.setText("");
+	    	kol_cell_3.setText("");
+	    	h_cell_3.setText("");
+	    	a_cell_3.setText("");
+	    	b_cell_3.setText("");
+	    	kol_cell_st_3.setText("");
+	    	stor_3.setText("");
+	    	itog.setText("");
+
+	    }    	    	                                                        
+	   });	
+	   
+	   	del_4.addActionListener(new ActionListener(){ 
+	    public void actionPerformed(ActionEvent e)       
+	    {   
+	    	//	Обнуляем все поля, переменные, флажки ставим в состояние выключен
+	    	h_4.setText("");
+	    	a_4.setText("");
+	    	b_4.setText("");
+	    	kol_4.setText("");
+	    	kol_cell_4.setText("");
+	    	h_cell_4.setText("");
+	    	a_cell_4.setText("");
+	    	b_cell_4.setText("");
+	    	kol_cell_st_4.setText("");
+	    	stor_4.setText("");
+	    	itog.setText("");
+
+	    }    	    	                                                        
+	   });	
+	   
+	   	del_5.addActionListener(new ActionListener(){ 
+	    public void actionPerformed(ActionEvent e)       
+	    {   
+	    	//	Обнуляем все поля, переменные, флажки ставим в состояние выключен
+	    	h_5.setText("");
+	    	a_5.setText("");
+	    	b_5.setText("");
+	    	kol_5.setText("");
+	    	kol_cell_5.setText("");
+	    	h_cell_5.setText("");
+	    	a_cell_5.setText("");
+	    	b_cell_5.setText("");
+	    	kol_cell_st_5.setText("");
+	    	stor_5.setText("");
+	    	itog.setText("");
+
+	    }    	    	                                                        
+	   });			
+	}	
+
+	//проверка данных, введенных пользователем
+    public static boolean isValidInput(JTextField jtxt, String description) {
+
+        JDialog D = new JDialog();
+		//если был введен какой-либо текст
+        if (jtxt.getText().trim().length() > 0) {
+            //проверка на ввод только целого числа
+            try { /* Для задания блока программного кода, который требуется защитить от исключений, используется ключевое слово try. 
+				Сразу же после try-блока помещается блок catch, задающий тип исключения которое вы хотите обрабатывать.
+				Исключение – это проблемная ситуация, возникающая по мере выполнения кода программы. Работает она так:
+				1.Выполняется код внутри блока try. 2.Если в нём ошибок нет, то блок catch(err) игнорируется, то есть выполнение 
+				доходит до конца try и потом прыгает через catch. 3.Если в нём возникнет ошибка, то выполнение try на ней
+				 прерывается, и управление прыгает в начало блока catch(err).
+				*/
+              
+                 double num = Double.parseDouble(jtxt.getText().replace(',','.')); //попытка преобразовать текст в целое число      
+                 if (num>0){ //если переменная меньше или равна нулю - ошибка
+                	 return true; //если все нормально - возвращаем true
+                 }
+                 else {
+                     jtxt.requestFocus();
+                     jtxt.setText("");//очистить текстовое поле
+                     //предупреждение - неверный формат числа
+                     JOptionPane.showMessageDialog(D, "Значение не может быть меньше или равно нулю!", "Ошибка", JOptionPane.WARNING_MESSAGE);
+                	 return false;
+                 }
+            } catch (NumberFormatException e) {
+            	/* Для задания блока программного кода, который требуется защитить от исключений, используется ключевое слово try. 
+				Сразу же после try-блока помещается блок catch, задающий тип исключения которое вы хотите обрабатывать.
+				Исключение – это проблемная ситуация, возникающая по мере выполнения кода программы. Работает она так:
+				1.Выполняется код внутри блока try. 2.Если в нём ошибок нет, то блок catch(err) игнорируется, то есть выполнение 
+				доходит до конца try и потом прыгает через catch. 3.Если в нём возникнет ошибка, то выполнение try на ней
+				 прерывается, и управление прыгает в начало блока catch(err).
+				*/
+
+                //расположить курсор в текстовое поле, чтобы пользователь еще раз ввел число
+                jtxt.requestFocus();
+                jtxt.setText("");//очистить текстовое поле
+   			
+                //предупреждение - неверный формат числа
+                JOptionPane.showMessageDialog(D, "Вы должны ввести число!", "Ошибка", JOptionPane.WARNING_MESSAGE);
+
+                return false;//ошибка - возвращаем false
+            }
+
+        } else {// если пользователь не ввели никаких данных
+
+            //предупреждение, что нужно ввести данные
+            JOptionPane.showMessageDialog(D, "Введите " + description, "Ошибка", JOptionPane.WARNING_MESSAGE);
+
+            //расположить курсор в текстово окне, чтобы пользователь еще раз ввел число
+            jtxt.requestFocus();
+            jtxt.selectAll();//очистить текстовое поле
+
+            //ошибка - возвращаем false
+            return false;
+        }
+    }	
+
+}
+
